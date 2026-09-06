@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Bagikan sekarang · ingat nanti</string>
+    <string name="empty_share_hint">Gunakan Bagikan di aplikasi apa pun lalu pilih Remindrop.</string>
+    <string name="share_title">Ingatkan saya tentang ini</string>
+    <string name="choose_when">Kapan ingin diingatkan?</string>
+    <string name="in_one_hour">1 jam lagi</string>
+    <string name="this_evening">Malam ini</string>
+    <string name="tomorrow">Besok</string>
+    <string name="this_weekend">Akhir pekan ini</string>
+    <string name="custom_time">Pilih tanggal dan waktu</string>
+    <string name="cancel">Batal</string>
+    <string name="done">Selesai</string>
+    <string name="later">Nanti</string>
+    <string name="now">Sekarang</string>
+    <string name="all_caught_up">Tidak ada yang perlu diperhatikan</string>
+    <string name="nothing_later">Tidak ada pengingat mendatang</string>
+    <string name="nothing_done">Pengingat yang selesai akan muncul di sini</string>
+    <string name="open">Buka</string>
+    <string name="mark_done">Tandai selesai</string>
+    <string name="snooze">Ingatkan nanti</string>
+    <string name="delete">Hapus</string>
+    <string name="new_reminder">Pengingat baru</string>
+    <string name="title_optional">Judul (opsional)</string>
+    <string name="text_or_link">Teks atau tautan</string>
+    <string name="choose_time">Pilih waktu</string>
+    <string name="save">Simpan</string>
+    <string name="settings">Setelan</string>
+    <string name="privacy">Privasi sejak awal</string>
+    <string name="privacy_detail">Tanpa akun, pelacak, cloud, atau izin Internet. Pengingat tetap tersimpan di perangkat ini.</string>
+    <string name="reliability">Keandalan pengingat</string>
+    <string name="reliability_detail">Remindrop menggunakan alarm Android dan menjadwalkan ulang pengingat yang tertunda setelah perangkat dimulai ulang. Beberapa ponsel dapat menunda pengingat jika aplikasi dibatasi ketat oleh setelan baterai.</string>
+    <string name="battery_settings">Buka setelan baterai aplikasi</string>
+    <string name="about">Tentang</string>
+    <string name="version">Versi 0.1.0</string>
+    <string name="notification_channel">Pengingat</string>
+    <string name="notification_channel_description">Pengingat yang Anda jadwalkan di Remindrop</string>
+    <string name="snooze_30">30 menit</string>
+    <string name="snooze_1h">1 jam</string>
+    <string name="snooze_tonight">Malam ini</string>
+    <string name="snooze_tomorrow">Besok</string>
+    <string name="permission_needed">Izinkan notifikasi agar Remindrop dapat menampilkan pengingat Anda.</string>
+</resources>
