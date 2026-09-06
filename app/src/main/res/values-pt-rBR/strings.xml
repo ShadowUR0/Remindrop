@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Compartilhe agora · lembre depois</string>
+    <string name="empty_share_hint">Use Compartilhar em qualquer app e escolha o Remindrop.</string>
+    <string name="share_title">Lembre-me disso</string>
+    <string name="choose_when">Quando você quer ser lembrado?</string>
+    <string name="in_one_hour">Daqui a 1 hora</string>
+    <string name="this_evening">Hoje à noite</string>
+    <string name="tomorrow">Amanhã</string>
+    <string name="this_weekend">Neste fim de semana</string>
+    <string name="custom_time">Escolher data e hora</string>
+    <string name="cancel">Cancelar</string>
+    <string name="done">Concluído</string>
+    <string name="later">Mais tarde</string>
+    <string name="now">Agora</string>
+    <string name="all_caught_up">Nada precisa da sua atenção</string>
+    <string name="nothing_later">Nenhum lembrete próximo</string>
+    <string name="nothing_done">Os lembretes concluídos aparecerão aqui</string>
+    <string name="open">Abrir</string>
+    <string name="mark_done">Marcar como concluído</string>
+    <string name="snooze">Lembrar mais tarde</string>
+    <string name="delete">Excluir</string>
+    <string name="new_reminder">Novo lembrete</string>
+    <string name="title_optional">Título (opcional)</string>
+    <string name="text_or_link">Texto ou link</string>
+    <string name="choose_time">Escolher horário</string>
+    <string name="save">Salvar</string>
+    <string name="settings">Configurações</string>
+    <string name="privacy">Privacidade em primeiro lugar</string>
+    <string name="privacy_detail">Sem conta, sem rastreadores, sem nuvem e sem permissão de Internet. Seus lembretes ficam neste dispositivo.</string>
+    <string name="reliability">Confiabilidade dos lembretes</string>
+    <string name="reliability_detail">O Remindrop usa os alarmes do Android e agenda novamente os lembretes pendentes após reiniciar o aparelho. Alguns celulares podem atrasá-los se o app estiver sob restrições fortes de bateria.</string>
+    <string name="battery_settings">Abrir configurações de bateria do app</string>
+    <string name="about">Sobre</string>
+    <string name="version">Versão 0.1.0</string>
+    <string name="notification_channel">Lembretes</string>
+    <string name="notification_channel_description">Lembretes que você agenda no Remindrop</string>
+    <string name="snooze_30">30 minutos</string>
+    <string name="snooze_1h">1 hora</string>
+    <string name="snooze_tonight">Hoje à noite</string>
+    <string name="snooze_tomorrow">Amanhã</string>
+    <string name="permission_needed">Permita as notificações para que o Remindrop possa mostrar seus lembretes.</string>
+</resources>
