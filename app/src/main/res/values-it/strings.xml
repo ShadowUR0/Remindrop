@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Condividi ora · ricordalo dopo</string>
+    <string name="empty_share_hint">Usa Condividi in qualsiasi app e scegli Remindrop.</string>
+    <string name="share_title">Ricordamelo</string>
+    <string name="choose_when">Quando vuoi essere avvisato?</string>
+    <string name="in_one_hour">Tra 1 ora</string>
+    <string name="this_evening">Questa sera</string>
+    <string name="tomorrow">Domani</string>
+    <string name="this_weekend">Questo fine settimana</string>
+    <string name="custom_time">Scegli data e ora</string>
+    <string name="cancel">Annulla</string>
+    <string name="done">Completati</string>
+    <string name="later">Più tardi</string>
+    <string name="now">Ora</string>
+    <string name="all_caught_up">Non c'è nulla che richieda la tua attenzione</string>
+    <string name="nothing_later">Nessun promemoria in arrivo</string>
+    <string name="nothing_done">I promemoria completati appariranno qui</string>
+    <string name="open">Apri</string>
+    <string name="mark_done">Segna come completato</string>
+    <string name="snooze">Ricorda più tardi</string>
+    <string name="delete">Elimina</string>
+    <string name="new_reminder">Nuovo promemoria</string>
+    <string name="title_optional">Titolo (facoltativo)</string>
+    <string name="text_or_link">Testo o link</string>
+    <string name="choose_time">Scegli l'ora</string>
+    <string name="save">Salva</string>
+    <string name="settings">Impostazioni</string>
+    <string name="privacy">Privacy prima di tutto</string>
+    <string name="privacy_detail">Nessun account, tracker, cloud o autorizzazione Internet. I tuoi promemoria restano su questo dispositivo.</string>
+    <string name="reliability">Affidabilità dei promemoria</string>
+    <string name="reliability_detail">Remindrop usa gli allarmi di Android e riprogramma i promemoria in sospeso dopo un riavvio. Alcuni telefoni possono ritardarli se l'app è soggetta a forti restrizioni della batteria.</string>
+    <string name="battery_settings">Apri impostazioni batteria dell'app</string>
+    <string name="about">Informazioni</string>
+    <string name="version">Versione 0.1.0</string>
+    <string name="notification_channel">Promemoria</string>
+    <string name="notification_channel_description">Promemoria programmati in Remindrop</string>
+    <string name="snooze_30">30 minuti</string>
+    <string name="snooze_1h">1 ora</string>
+    <string name="snooze_tonight">Questa sera</string>
+    <string name="snooze_tomorrow">Domani</string>
+    <string name="permission_needed">Consenti le notifiche affinché Remindrop possa mostrare i tuoi promemoria.</string>
+</resources>
