@@ -1,0 +1,3 @@
+Added localization for 17 languages.
+Added adaptive launcher icon support so the icon follows the device launcher shape.
+Improved localized UI text and notification labels.
