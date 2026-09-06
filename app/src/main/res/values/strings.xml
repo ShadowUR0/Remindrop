@@ -33,7 +33,7 @@
     <string name="reliability_detail">Remindrop uses Android alarms and reschedules pending reminders after a reboot. Some phones may delay alarms if the app is heavily battery-restricted.</string>
     <string name="battery_settings">Open app battery settings</string>
     <string name="about">About</string>
-    <string name="version">Version 0.1.0</string>
+    <string name="version">Version 0.1.1</string>
     <string name="notification_channel">Reminders</string>
     <string name="notification_channel_description">Reminders you schedule in Remindrop</string>
     <string name="snooze_30">30 minutes</string>
