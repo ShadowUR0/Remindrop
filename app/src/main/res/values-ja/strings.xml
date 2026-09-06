@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">今シェア · あとで思い出す</string>
+    <string name="empty_share_hint">どのアプリからでも共有を開き、Remindrop を選んでください。</string>
+    <string name="share_title">これをあとで知らせる</string>
+    <string name="choose_when">いつ知らせますか？</string>
+    <string name="in_one_hour">1時間後</string>
+    <string name="this_evening">今夜</string>
+    <string name="tomorrow">明日</string>
+    <string name="this_weekend">今週末</string>
+    <string name="custom_time">日時を選ぶ</string>
+    <string name="cancel">キャンセル</string>
+    <string name="done">完了</string>
+    <string name="later">あとで</string>
+    <string name="now">今</string>
+    <string name="all_caught_up">今すぐ確認するものはありません</string>
+    <string name="nothing_later">予定されているリマインダーはありません</string>
+    <string name="nothing_done">完了したリマインダーがここに表示されます</string>
+    <string name="open">開く</string>
+    <string name="mark_done">完了にする</string>
+    <string name="snooze">あとで知らせる</string>
+    <string name="delete">削除</string>
+    <string name="new_reminder">新しいリマインダー</string>
+    <string name="title_optional">タイトル（任意）</string>
+    <string name="text_or_link">テキストまたはリンク</string>
+    <string name="choose_time">時刻を選ぶ</string>
+    <string name="save">保存</string>
+    <string name="settings">設定</string>
+    <string name="privacy">プライバシーを最優先</string>
+    <string name="privacy_detail">アカウント、トラッカー、クラウド、インターネット権限は不要です。リマインダーはこの端末だけに保存されます。</string>
+    <string name="reliability">リマインダーの信頼性</string>
+    <string name="reliability_detail">Remindrop は Android のアラームを使い、端末の再起動後に未実行のリマインダーを再設定します。アプリに厳しいバッテリー制限がかかっている端末では、通知が遅れることがあります。</string>
+    <string name="battery_settings">アプリのバッテリー設定を開く</string>
+    <string name="about">このアプリについて</string>
+    <string name="version">バージョン 0.1.0</string>
+    <string name="notification_channel">リマインダー</string>
+    <string name="notification_channel_description">Remindrop で設定したリマインダー</string>
+    <string name="snooze_30">30分</string>
+    <string name="snooze_1h">1時間</string>
+    <string name="snooze_tonight">今夜</string>
+    <string name="snooze_tomorrow">明日</string>
+    <string name="permission_needed">リマインダーを表示するには、Remindrop の通知を許可してください。</string>
+</resources>
