@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Udostępnij teraz · przypomnij później</string>
+    <string name="empty_share_hint">Użyj opcji Udostępnij w dowolnej aplikacji i wybierz Remindrop.</string>
+    <string name="share_title">Przypomnij mi o tym</string>
+    <string name="choose_when">Kiedy przypomnieć?</string>
+    <string name="in_one_hour">Za 1 godzinę</string>
+    <string name="this_evening">Dziś wieczorem</string>
+    <string name="tomorrow">Jutro</string>
+    <string name="this_weekend">W ten weekend</string>
+    <string name="custom_time">Wybierz datę i godzinę</string>
+    <string name="cancel">Anuluj</string>
+    <string name="done">Gotowe</string>
+    <string name="later">Później</string>
+    <string name="now">Teraz</string>
+    <string name="all_caught_up">Nic nie wymaga teraz Twojej uwagi</string>
+    <string name="nothing_later">Brak nadchodzących przypomnień</string>
+    <string name="nothing_done">Ukończone przypomnienia pojawią się tutaj</string>
+    <string name="open">Otwórz</string>
+    <string name="mark_done">Oznacz jako gotowe</string>
+    <string name="snooze">Przypomnij później</string>
+    <string name="delete">Usuń</string>
+    <string name="new_reminder">Nowe przypomnienie</string>
+    <string name="title_optional">Tytuł (opcjonalnie)</string>
+    <string name="text_or_link">Tekst lub link</string>
+    <string name="choose_time">Wybierz godzinę</string>
+    <string name="save">Zapisz</string>
+    <string name="settings">Ustawienia</string>
+    <string name="privacy">Prywatność przede wszystkim</string>
+    <string name="privacy_detail">Bez konta, trackerów, chmury i uprawnienia do Internetu. Twoje przypomnienia pozostają na tym urządzeniu.</string>
+    <string name="reliability">Niezawodność przypomnień</string>
+    <string name="reliability_detail">Remindrop korzysta z alarmów Androida i ponownie planuje oczekujące przypomnienia po restarcie urządzenia. Niektóre telefony mogą je opóźniać, jeśli aplikacja ma silne ograniczenia baterii.</string>
+    <string name="battery_settings">Otwórz ustawienia baterii aplikacji</string>
+    <string name="about">O aplikacji</string>
+    <string name="version">Wersja 0.1.0</string>
+    <string name="notification_channel">Przypomnienia</string>
+    <string name="notification_channel_description">Przypomnienia zaplanowane w Remindrop</string>
+    <string name="snooze_30">30 minut</string>
+    <string name="snooze_1h">1 godzina</string>
+    <string name="snooze_tonight">Dziś wieczorem</string>
+    <string name="snooze_tomorrow">Jutro</string>
+    <string name="permission_needed">Zezwól na powiadomienia, aby Remindrop mógł wyświetlać Twoje przypomnienia.</string>
+</resources>
