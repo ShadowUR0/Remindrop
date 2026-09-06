@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Remindrop</string>
+    <string name="tagline">Share now · remember later</string>
+    <string name="empty_share_hint">Use Share in any app and choose Remindrop.</string>
     <string name="share_title">Remind me about this</string>
     <string name="choose_when">When should it come back?</string>
     <string name="in_one_hour">In 1 hour</string>
