@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Remindrop</string>
-    <string name="tagline">شارك الان · تذكر لاحقا</string>
-    <string name="empty_share_hint">استخدم زر المشاركة في اي تطبيق ثم اختر Remindrop.</string>
+    <string name="tagline">شارك الان · تذكره لاحقا</string>
+    <string name="empty_share_hint">من اي تطبيق، اضغط مشاركة ثم اختر Remindrop.</string>
     <string name="share_title">ذكرني بهذا</string>
-    <string name="choose_when">متى تريد ان يعود لك؟</string>
+    <string name="choose_when">متى تريد ان نذكرك به؟</string>
     <string name="in_one_hour">بعد ساعة</string>
     <string name="this_evening">هذا المساء</string>
     <string name="tomorrow">غدا</string>
     <string name="this_weekend">نهاية الاسبوع</string>
     <string name="custom_time">اختر التاريخ والوقت</string>
     <string name="cancel">الغاء</string>
-    <string name="done">تم</string>
+    <string name="done">مكتمل</string>
     <string name="later">لاحقا</string>
     <string name="now">الان</string>
     <string name="all_caught_up">لا شيء يحتاج انتباهك</string>
     <string name="nothing_later">لا توجد تذكيرات قادمة</string>
     <string name="nothing_done">ستظهر التذكيرات المكتملة هنا</string>
     <string name="open">فتح</string>
-    <string name="mark_done">تم</string>
+    <string name="mark_done">وضع كمكتمل</string>
     <string name="snooze">ذكرني لاحقا</string>
     <string name="delete">حذف</string>
     <string name="new_reminder">تذكير جديد</string>
@@ -27,18 +27,18 @@
     <string name="choose_time">اختر الوقت</string>
     <string name="save">حفظ</string>
     <string name="settings">الاعدادات</string>
-    <string name="privacy">خصوصية من الاساس</string>
-    <string name="privacy_detail">بلا حساب وبلا متتبعات وبلا سحابة وبلا صلاحية انترنت. تذكيراتك تبقى على هذا الجهاز.</string>
+    <string name="privacy">خصوصيتك اولا</string>
+    <string name="privacy_detail">لا حساب، لا متتبعات، لا سحابة، ولا يطلب التطبيق صلاحية الانترنت. تذكيراتك تبقى على هذا الجهاز.</string>
     <string name="reliability">موثوقية التذكيرات</string>
-    <string name="reliability_detail">يستخدم Remindrop منبهات Android ويعيد جدولة التذكيرات بعد اعادة تشغيل الهاتف. قد تؤخر بعض الهواتف التنبيهات اذا كان التطبيق مقيدا بشدة لتوفير البطارية.</string>
+    <string name="reliability_detail">يستخدم Remindrop منبهات Android ويعيد جدولة التذكيرات المعلقة بعد اعادة تشغيل الهاتف. قد تؤخر بعض الهواتف التذكيرات اذا كان التطبيق مقيدا بشدة لتوفير البطارية.</string>
     <string name="battery_settings">فتح اعدادات بطارية التطبيق</string>
     <string name="about">حول التطبيق</string>
     <string name="version">الاصدار 0.1.0</string>
     <string name="notification_channel">التذكيرات</string>
-    <string name="notification_channel_description">التذكيرات التي تضبطها داخل Remindrop</string>
+    <string name="notification_channel_description">التذكيرات التي تضبطها في Remindrop</string>
     <string name="snooze_30">30 دقيقة</string>
     <string name="snooze_1h">ساعة</string>
     <string name="snooze_tonight">هذا المساء</string>
     <string name="snooze_tomorrow">غدا</string>
-    <string name="permission_needed">صلاحية الاشعارات مطلوبة لعرض التذكيرات.</string>
+    <string name="permission_needed">اسمح بالاشعارات حتى يتمكن Remindrop من عرض التذكيرات.</string>
 </resources>
