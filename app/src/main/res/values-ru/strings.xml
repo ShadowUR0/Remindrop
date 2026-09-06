@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Поделитесь сейчас · вспомните позже</string>
+    <string name="empty_share_hint">Нажмите «Поделиться» в любом приложении и выберите Remindrop.</string>
+    <string name="share_title">Напомнить об этом</string>
+    <string name="choose_when">Когда напомнить?</string>
+    <string name="in_one_hour">Через 1 час</string>
+    <string name="this_evening">Сегодня вечером</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="this_weekend">В эти выходные</string>
+    <string name="custom_time">Выбрать дату и время</string>
+    <string name="cancel">Отмена</string>
+    <string name="done">Готово</string>
+    <string name="later">Позже</string>
+    <string name="now">Сейчас</string>
+    <string name="all_caught_up">Сейчас ничего не требует внимания</string>
+    <string name="nothing_later">Нет предстоящих напоминаний</string>
+    <string name="nothing_done">Выполненные напоминания появятся здесь</string>
+    <string name="open">Открыть</string>
+    <string name="mark_done">Отметить выполненным</string>
+    <string name="snooze">Напомнить позже</string>
+    <string name="delete">Удалить</string>
+    <string name="new_reminder">Новое напоминание</string>
+    <string name="title_optional">Заголовок (необязательно)</string>
+    <string name="text_or_link">Текст или ссылка</string>
+    <string name="choose_time">Выбрать время</string>
+    <string name="save">Сохранить</string>
+    <string name="settings">Настройки</string>
+    <string name="privacy">Конфиденциальность прежде всего</string>
+    <string name="privacy_detail">Без аккаунта, трекеров, облака и разрешения на доступ в Интернет. Напоминания остаются на этом устройстве.</string>
+    <string name="reliability">Надежность напоминаний</string>
+    <string name="reliability_detail">Remindrop использует будильники Android и повторно планирует ожидающие напоминания после перезагрузки. На некоторых устройствах строгие ограничения батареи могут задерживать напоминания.</string>
+    <string name="battery_settings">Открыть настройки батареи приложения</string>
+    <string name="about">О приложении</string>
+    <string name="version">Версия 0.1.0</string>
+    <string name="notification_channel">Напоминания</string>
+    <string name="notification_channel_description">Напоминания, запланированные в Remindrop</string>
+    <string name="snooze_30">30 минут</string>
+    <string name="snooze_1h">1 час</string>
+    <string name="snooze_tonight">Сегодня вечером</string>
+    <string name="snooze_tomorrow">Завтра</string>
+    <string name="permission_needed">Разрешите уведомления, чтобы Remindrop мог показывать напоминания.</string>
+</resources>
