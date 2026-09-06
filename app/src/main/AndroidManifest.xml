@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
+        android:name=".RemindropApplication"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="@drawable/ic_launcher"
