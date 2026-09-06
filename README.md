@@ -1,6 +1,8 @@
-# Remindrop
-
-**Share now. Remember later.**
+<div align="center">
+  <img src="fastlane/metadata/android/en-US/images/icon.png" width="128" alt="Remindrop icon">
+  <h1>Remindrop</h1>
+  <p><strong>Share now. Remember later.</strong></p>
+</div>
 
 Remindrop is a lightweight, privacy-first Android app for turning anything you can share into a local reminder.
 
@@ -18,7 +20,7 @@ See a Reddit post, video, article, product, message, or piece of text you want t
 - **Small storage footprint:** reminders are stored as a compact local JSON file
 - **Android 7.0+:** supports API 24 and newer
 - **Material 3 / Material You:** dynamic system colors on Android 12+
-- **Arabic and English:** follows the device language automatically
+- **17 languages:** includes Arabic, English, Simplified and Traditional Chinese, Spanish, Portuguese, French, German, Russian, Japanese, Korean, Hindi, Indonesian, Turkish, Italian, Polish, and Vietnamese
 
 ## Features
 
@@ -105,6 +107,12 @@ See [docs/RELEASING.md](docs/RELEASING.md) for the one-time signing setup and re
 Remindrop is prepared for submission to the official F-Droid repository. Upstream Fastlane metadata is included for the store listing and changelogs, and a starter fdroiddata metadata file is included under `packaging/fdroid/`.
 
 See [docs/F-DROID.md](docs/F-DROID.md) for the exact submission process.
+
+## Contributing
+
+Contributions are welcome, including **AI-assisted contributions**. AI-generated or AI-assisted changes must still follow Remindrop's project rules and be reviewed and understood by the contributor before submission.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. It contains the required rules for AI-assisted work, privacy, dependencies, localization, Android compatibility, and verification.
 
 ## Privacy
 
