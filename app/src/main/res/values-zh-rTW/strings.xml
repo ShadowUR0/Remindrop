@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">現在分享 · 稍後提醒</string>
+    <string name="empty_share_hint">從任何應用程式點「分享」，然後選擇 Remindrop。</string>
+    <string name="share_title">提醒我這件事</string>
+    <string name="choose_when">什麼時候提醒你？</string>
+    <string name="in_one_hour">1 小時後</string>
+    <string name="this_evening">今晚</string>
+    <string name="tomorrow">明天</string>
+    <string name="this_weekend">本週末</string>
+    <string name="custom_time">選擇日期和時間</string>
+    <string name="cancel">取消</string>
+    <string name="done">已完成</string>
+    <string name="later">稍後</string>
+    <string name="now">現在</string>
+    <string name="all_caught_up">目前沒有需要處理的提醒</string>
+    <string name="nothing_later">沒有即將到來的提醒</string>
+    <string name="nothing_done">完成的提醒會顯示在這裡</string>
+    <string name="open">開啟</string>
+    <string name="mark_done">標示為完成</string>
+    <string name="snooze">稍後提醒</string>
+    <string name="delete">刪除</string>
+    <string name="new_reminder">新增提醒</string>
+    <string name="title_optional">標題（選填）</string>
+    <string name="text_or_link">文字或連結</string>
+    <string name="choose_time">選擇時間</string>
+    <string name="save">儲存</string>
+    <string name="settings">設定</string>
+    <string name="privacy">隱私優先</string>
+    <string name="privacy_detail">不需帳號、沒有追蹤器、不使用雲端，也不要求網路權限。提醒只會保存在這台裝置上。</string>
+    <string name="reliability">提醒可靠性</string>
+    <string name="reliability_detail">Remindrop 使用 Android 鬧鐘，並會在裝置重新啟動後重新安排尚未觸發的提醒。如果系統對應用程式套用嚴格的電池限制，部分手機可能會延遲提醒。</string>
+    <string name="battery_settings">開啟應用程式電池設定</string>
+    <string name="about">關於</string>
+    <string name="version">版本 0.1.0</string>
+    <string name="notification_channel">提醒</string>
+    <string name="notification_channel_description">你在 Remindrop 中設定的提醒</string>
+    <string name="snooze_30">30 分鐘</string>
+    <string name="snooze_1h">1 小時</string>
+    <string name="snooze_tonight">今晚</string>
+    <string name="snooze_tomorrow">明天</string>
+    <string name="permission_needed">若要顯示提醒，請允許 Remindrop 傳送通知。</string>
+</resources>
