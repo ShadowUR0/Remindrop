@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="fastlane/metadata/android/en-US/images/icon.png" width="128" alt="Remindrop icon">
+  <img src="docs/remindrop-logo.svg" width="120" height="120" alt="Remindrop logo">
   <h1>Remindrop</h1>
   <p><strong>Share now. Remember later.</strong></p>
 </div>
@@ -98,7 +98,7 @@ The Release workflow creates a minified, resource-shrunk, signed APK, verifies i
 
 A persistent private signing key is required once so future APK updates keep the same Android signature. The key is supplied only through GitHub Actions secrets and is never committed to the repository.
 
-After the signing secrets are configured you can either push a `v*` tag or open **Actions → Release → Run workflow** and enter a tag such as `v0.1.0`.
+After the signing secrets are configured you can either push a `v*` tag or open **Actions → Release → Run workflow** and enter a tag such as `v0.1.2`.
 
 See [docs/RELEASING.md](docs/RELEASING.md) for the one-time signing setup and release process.
 
