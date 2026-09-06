@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Partagez maintenant · retrouvez-le plus tard</string>
+    <string name="empty_share_hint">Utilisez Partager dans n’importe quelle application puis choisissez Remindrop.</string>
+    <string name="share_title">Rappelle-moi ceci</string>
+    <string name="choose_when">Quand voulez-vous le retrouver ?</string>
+    <string name="in_one_hour">Dans 1 heure</string>
+    <string name="this_evening">Ce soir</string>
+    <string name="tomorrow">Demain</string>
+    <string name="this_weekend">Ce week-end</string>
+    <string name="custom_time">Choisir la date et l’heure</string>
+    <string name="cancel">Annuler</string>
+    <string name="done">Terminé</string>
+    <string name="later">Plus tard</string>
+    <string name="now">Maintenant</string>
+    <string name="all_caught_up">Rien ne demande votre attention</string>
+    <string name="nothing_later">Aucun rappel à venir</string>
+    <string name="nothing_done">Les rappels terminés apparaîtront ici</string>
+    <string name="open">Ouvrir</string>
+    <string name="mark_done">Marquer comme terminé</string>
+    <string name="snooze">Rappeler plus tard</string>
+    <string name="delete">Supprimer</string>
+    <string name="new_reminder">Nouveau rappel</string>
+    <string name="title_optional">Titre (facultatif)</string>
+    <string name="text_or_link">Texte ou lien</string>
+    <string name="choose_time">Choisir l’heure</string>
+    <string name="save">Enregistrer</string>
+    <string name="settings">Paramètres</string>
+    <string name="privacy">La confidentialité d’abord</string>
+    <string name="privacy_detail">Aucun compte, aucun traqueur, aucun cloud et aucune autorisation Internet. Vos rappels restent sur cet appareil.</string>
+    <string name="reliability">Fiabilité des rappels</string>
+    <string name="reliability_detail">Remindrop utilise les alarmes Android et reprogramme les rappels en attente après un redémarrage. Certains téléphones peuvent les retarder si l’application est fortement limitée par les réglages de batterie.</string>
+    <string name="battery_settings">Ouvrir les réglages de batterie de l’application</string>
+    <string name="about">À propos</string>
+    <string name="version">Version 0.1.0</string>
+    <string name="notification_channel">Rappels</string>
+    <string name="notification_channel_description">Rappels programmés dans Remindrop</string>
+    <string name="snooze_30">30 minutes</string>
+    <string name="snooze_1h">1 heure</string>
+    <string name="snooze_tonight">Ce soir</string>
+    <string name="snooze_tomorrow">Demain</string>
+    <string name="permission_needed">Autorisez les notifications pour que Remindrop puisse afficher vos rappels.</string>
+</resources>
