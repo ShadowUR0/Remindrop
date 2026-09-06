@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Remindrop</string>
+    <string name="tagline">شارك الان · تذكر لاحقا</string>
+    <string name="empty_share_hint">استخدم زر المشاركة في اي تطبيق ثم اختر Remindrop.</string>
     <string name="share_title">ذكرني بهذا</string>
     <string name="choose_when">متى تريد ان يعود لك؟</string>
     <string name="in_one_hour">بعد ساعة</string>
