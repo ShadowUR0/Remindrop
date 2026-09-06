@@ -131,10 +131,8 @@ object ReminderStore {
         val atomicFile = AtomicFile(File(context.filesDir, FILE_NAME))
         val stream = atomicFile.startWrite()
         try {
-            stream.writer(Charsets.UTF_8).use { writer ->
-                writer.write(array.toString())
-                writer.flush()
-            }
+            stream.write(array.toString().toByteArray(Charsets.UTF_8))
+            stream.flush()
             atomicFile.finishWrite(stream)
         } catch (error: Throwable) {
             atomicFile.failWrite(stream)
