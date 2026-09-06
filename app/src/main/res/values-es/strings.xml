@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Comparte ahora · recuérdalo después</string>
+    <string name="empty_share_hint">Usa Compartir en cualquier app y elige Remindrop.</string>
+    <string name="share_title">Recuérdame esto</string>
+    <string name="choose_when">¿Cuándo quieres que vuelva?</string>
+    <string name="in_one_hour">Dentro de 1 hora</string>
+    <string name="this_evening">Esta tarde</string>
+    <string name="tomorrow">Mañana</string>
+    <string name="this_weekend">Este fin de semana</string>
+    <string name="custom_time">Elegir fecha y hora</string>
+    <string name="cancel">Cancelar</string>
+    <string name="done">Hecho</string>
+    <string name="later">Más tarde</string>
+    <string name="now">Ahora</string>
+    <string name="all_caught_up">Nada necesita tu atención</string>
+    <string name="nothing_later">No hay recordatorios próximos</string>
+    <string name="nothing_done">Los recordatorios completados aparecerán aquí</string>
+    <string name="open">Abrir</string>
+    <string name="mark_done">Marcar como hecho</string>
+    <string name="snooze">Recordar más tarde</string>
+    <string name="delete">Eliminar</string>
+    <string name="new_reminder">Nuevo recordatorio</string>
+    <string name="title_optional">Título (opcional)</string>
+    <string name="text_or_link">Texto o enlace</string>
+    <string name="choose_time">Elegir hora</string>
+    <string name="save">Guardar</string>
+    <string name="settings">Ajustes</string>
+    <string name="privacy">Privacidad ante todo</string>
+    <string name="privacy_detail">Sin cuenta, sin rastreadores, sin nube y sin permiso de Internet. Tus recordatorios se quedan en este dispositivo.</string>
+    <string name="reliability">Fiabilidad de los recordatorios</string>
+    <string name="reliability_detail">Remindrop usa las alarmas de Android y vuelve a programar los recordatorios pendientes después de reiniciar el teléfono. Algunos dispositivos pueden retrasarlos si la app tiene restricciones estrictas de batería.</string>
+    <string name="battery_settings">Abrir ajustes de batería de la app</string>
+    <string name="about">Acerca de</string>
+    <string name="version">Versión 0.1.0</string>
+    <string name="notification_channel">Recordatorios</string>
+    <string name="notification_channel_description">Recordatorios que programas en Remindrop</string>
+    <string name="snooze_30">30 minutos</string>
+    <string name="snooze_1h">1 hora</string>
+    <string name="snooze_tonight">Esta tarde</string>
+    <string name="snooze_tomorrow">Mañana</string>
+    <string name="permission_needed">Permite las notificaciones para que Remindrop pueda mostrar tus recordatorios.</string>
+</resources>
