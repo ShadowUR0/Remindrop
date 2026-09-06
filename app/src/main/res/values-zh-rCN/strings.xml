@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">现在分享 · 稍后提醒</string>
+    <string name="empty_share_hint">从任意应用点“分享”，然后选择 Remindrop。</string>
+    <string name="share_title">提醒我这件事</string>
+    <string name="choose_when">什么时候提醒你？</string>
+    <string name="in_one_hour">1 小时后</string>
+    <string name="this_evening">今晚</string>
+    <string name="tomorrow">明天</string>
+    <string name="this_weekend">本周末</string>
+    <string name="custom_time">选择日期和时间</string>
+    <string name="cancel">取消</string>
+    <string name="done">已完成</string>
+    <string name="later">稍后</string>
+    <string name="now">现在</string>
+    <string name="all_caught_up">暂时没有需要处理的提醒</string>
+    <string name="nothing_later">没有即将到来的提醒</string>
+    <string name="nothing_done">完成的提醒会显示在这里</string>
+    <string name="open">打开</string>
+    <string name="mark_done">标记为完成</string>
+    <string name="snooze">稍后提醒</string>
+    <string name="delete">删除</string>
+    <string name="new_reminder">新建提醒</string>
+    <string name="title_optional">标题（可选）</string>
+    <string name="text_or_link">文本或链接</string>
+    <string name="choose_time">选择时间</string>
+    <string name="save">保存</string>
+    <string name="settings">设置</string>
+    <string name="privacy">隐私优先</string>
+    <string name="privacy_detail">无需账号、无追踪器、无云端，也不申请联网权限。提醒只保存在此设备上。</string>
+    <string name="reliability">提醒可靠性</string>
+    <string name="reliability_detail">Remindrop 使用 Android 闹钟，并会在设备重启后重新安排待提醒项目。如果系统对应用启用了严格的电池限制，部分手机可能会延迟提醒。</string>
+    <string name="battery_settings">打开应用电池设置</string>
+    <string name="about">关于</string>
+    <string name="version">版本 0.1.0</string>
+    <string name="notification_channel">提醒</string>
+    <string name="notification_channel_description">你在 Remindrop 中设置的提醒</string>
+    <string name="snooze_30">30 分钟</string>
+    <string name="snooze_1h">1 小时</string>
+    <string name="snooze_tonight">今晚</string>
+    <string name="snooze_tomorrow">明天</string>
+    <string name="permission_needed">为了显示提醒，请允许 Remindrop 发送通知。</string>
+</resources>
