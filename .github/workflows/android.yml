@@ -34,12 +34,23 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build and verify
-        run: gradle --no-daemon --stacktrace :app:assembleDebug :app:assembleRelease :app:lintDebug
+        run: gradle --no-daemon --stacktrace :app:assembleDebug :app:assembleRelease :app:lintDebug :app:lintRelease
+
+      - name: Report APK sizes
+        run: find app/build/outputs/apk -type f -name '*.apk' -exec ls -lh {} \;
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
           name: remindrop-debug
           path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload unsigned release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: remindrop-release-unsigned
+          path: app/build/outputs/apk/release/*.apk
           if-no-files-found: error
           retention-days: 30

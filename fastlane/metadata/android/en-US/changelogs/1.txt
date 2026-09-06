@@ -1,0 +1,8 @@
+Initial release.
+
+• Share text and links into Remindrop
+• Quick and custom reminder times
+• Local notifications with Done and Snooze actions
+• Now, Later, and Done organizer
+• Arabic and English
+• No account, ads, trackers, cloud, or Internet permission

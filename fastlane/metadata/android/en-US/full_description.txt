@@ -1,0 +1,24 @@
+Remindrop turns anything you can share on Android into a reminder that comes back when you choose.
+
+See a post, video, article, product, message, or link you want to revisit? Open Android's Share menu, choose Remindrop, pick a time, and continue what you were doing. Remindrop stores the reminder locally and shows a local notification later.
+
+Features:
+• Share text and links from other Android apps
+• Quick presets for one hour, this evening, tomorrow, and the weekend
+• Custom date and time
+• Now, Later, and Done sections
+• Open the original link from the reminder
+• Mark reminders as done or snooze them
+• Restore pending reminders after a reboot
+• Material 3 interface with dynamic colors on Android 12+
+• Arabic and English
+
+Privacy:
+• No account
+• No ads
+• No analytics or trackers
+• No cloud backend
+• No Internet permission
+• Reminder data stays on the device
+
+Remindrop does not run a permanent background service or polling loop. It uses Android's alarm system only when a reminder is scheduled.

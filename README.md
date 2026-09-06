@@ -84,15 +84,27 @@ app/build/outputs/apk/debug/app-debug.apk
 
 ## Build on GitHub
 
-GitHub Actions builds and verifies the project on every push and pull request. CI builds the debug APK, validates the minified release variant, and runs Android Lint. Open the **Actions** tab, choose the latest successful **Android build**, then download the `remindrop-debug` artifact.
+GitHub Actions builds and verifies the project on every push and pull request. CI builds the debug APK, builds the minified release variant, runs Android Lint, reports APK sizes, and uploads both the debug APK and the **unsigned** release build as artifacts.
+
+The unsigned release artifact is for build/size verification only. Use a signed GitHub Release for normal installation and updates.
 
 The CI build uses only GitHub-hosted runners and official GitHub/Gradle setup actions. No Remindrop server is involved.
 
 ## Production releases
 
-A separate GitHub Actions workflow creates a signed GitHub Release whenever a `v*` tag is pushed. A persistent private signing key is required once so future APK updates keep the same Android signature. The key is supplied only through GitHub Actions secrets and is never committed to the repository.
+The Release workflow creates a minified, resource-shrunk, signed APK, verifies its Android signature, generates a SHA-256 checksum, and publishes both files in GitHub Releases.
+
+A persistent private signing key is required once so future APK updates keep the same Android signature. The key is supplied only through GitHub Actions secrets and is never committed to the repository.
+
+After the signing secrets are configured you can either push a `v*` tag or open **Actions → Release → Run workflow** and enter a tag such as `v0.1.0`.
 
 See [docs/RELEASING.md](docs/RELEASING.md) for the one-time signing setup and release process.
+
+## F-Droid
+
+Remindrop is prepared for submission to the official F-Droid repository. Upstream Fastlane metadata is included for the store listing and changelogs, and a starter fdroiddata metadata file is included under `packaging/fdroid/`.
+
+See [docs/F-DROID.md](docs/F-DROID.md) for the exact submission process.
 
 ## Privacy
 

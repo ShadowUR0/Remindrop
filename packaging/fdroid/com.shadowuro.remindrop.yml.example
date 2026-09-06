@@ -1,0 +1,22 @@
+Categories:
+  - Time
+License: GPL-3.0-only
+AuthorName: ShadowUR0
+SourceCode: https://github.com/ShadowUR0/Remindrop
+IssueTracker: https://github.com/ShadowUR0/Remindrop/issues
+
+AutoName: Remindrop
+RepoType: git
+Repo: https://github.com/ShadowUR0/Remindrop.git
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 1
+    commit: REPLACE_WITH_FULL_V0_1_0_COMMIT_SHA
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+$
+CurrentVersion: 0.1.0
+CurrentVersionCode: 1
