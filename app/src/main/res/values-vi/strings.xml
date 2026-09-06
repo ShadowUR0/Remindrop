@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Chia sẻ ngay · nhớ lại sau</string>
+    <string name="empty_share_hint">Dùng Chia sẻ trong bất kỳ ứng dụng nào rồi chọn Remindrop.</string>
+    <string name="share_title">Nhắc tôi về nội dung này</string>
+    <string name="choose_when">Khi nào bạn muốn được nhắc?</string>
+    <string name="in_one_hour">Sau 1 giờ</string>
+    <string name="this_evening">Tối nay</string>
+    <string name="tomorrow">Ngày mai</string>
+    <string name="this_weekend">Cuối tuần này</string>
+    <string name="custom_time">Chọn ngày và giờ</string>
+    <string name="cancel">Hủy</string>
+    <string name="done">Đã xong</string>
+    <string name="later">Sau</string>
+    <string name="now">Bây giờ</string>
+    <string name="all_caught_up">Hiện không có gì cần bạn chú ý</string>
+    <string name="nothing_later">Không có lời nhắc sắp tới</string>
+    <string name="nothing_done">Các lời nhắc đã hoàn thành sẽ xuất hiện ở đây</string>
+    <string name="open">Mở</string>
+    <string name="mark_done">Đánh dấu đã xong</string>
+    <string name="snooze">Nhắc lại sau</string>
+    <string name="delete">Xóa</string>
+    <string name="new_reminder">Lời nhắc mới</string>
+    <string name="title_optional">Tiêu đề (không bắt buộc)</string>
+    <string name="text_or_link">Văn bản hoặc liên kết</string>
+    <string name="choose_time">Chọn giờ</string>
+    <string name="save">Lưu</string>
+    <string name="settings">Cài đặt</string>
+    <string name="privacy">Ưu tiên quyền riêng tư</string>
+    <string name="privacy_detail">Không tài khoản, không trình theo dõi, không đám mây và không cần quyền Internet. Lời nhắc chỉ được lưu trên thiết bị này.</string>
+    <string name="reliability">Độ tin cậy của lời nhắc</string>
+    <string name="reliability_detail">Remindrop dùng báo thức của Android và tự lên lịch lại các lời nhắc đang chờ sau khi thiết bị khởi động lại. Một số điện thoại có thể trì hoãn lời nhắc nếu ứng dụng bị giới hạn pin quá nghiêm ngặt.</string>
+    <string name="battery_settings">Mở cài đặt pin của ứng dụng</string>
+    <string name="about">Giới thiệu</string>
+    <string name="version">Phiên bản 0.1.0</string>
+    <string name="notification_channel">Lời nhắc</string>
+    <string name="notification_channel_description">Các lời nhắc bạn đặt trong Remindrop</string>
+    <string name="snooze_30">30 phút</string>
+    <string name="snooze_1h">1 giờ</string>
+    <string name="snooze_tonight">Tối nay</string>
+    <string name="snooze_tomorrow">Ngày mai</string>
+    <string name="permission_needed">Hãy cho phép thông báo để Remindrop có thể hiển thị lời nhắc của bạn.</string>
+</resources>
