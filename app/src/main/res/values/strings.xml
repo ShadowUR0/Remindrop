@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="share_title">Remind me about this</string>
+    <string name="choose_when">When should it come back?</string>
+    <string name="in_one_hour">In 1 hour</string>
+    <string name="this_evening">This evening</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="this_weekend">This weekend</string>
+    <string name="custom_time">Choose date &amp; time</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="later">Later</string>
+    <string name="now">Now</string>
+    <string name="all_caught_up">Nothing needs your attention</string>
+    <string name="nothing_later">No upcoming reminders</string>
+    <string name="nothing_done">Completed reminders appear here</string>
+    <string name="open">Open</string>
+    <string name="mark_done">Mark done</string>
+    <string name="snooze">Snooze</string>
+    <string name="delete">Delete</string>
+    <string name="new_reminder">New reminder</string>
+    <string name="title_optional">Title (optional)</string>
+    <string name="text_or_link">Text or link</string>
+    <string name="choose_time">Choose time</string>
+    <string name="save">Save</string>
+    <string name="settings">Settings</string>
+    <string name="privacy">Private by design</string>
+    <string name="privacy_detail">No account, no trackers, no cloud and no Internet permission. Reminders stay on this device.</string>
+    <string name="reliability">Reminder reliability</string>
+    <string name="reliability_detail">Remindrop uses Android alarms and reschedules pending reminders after a reboot. Some phones may delay alarms if the app is heavily battery-restricted.</string>
+    <string name="battery_settings">Open app battery settings</string>
+    <string name="about">About</string>
+    <string name="version">Version 0.1.0</string>
+    <string name="notification_channel">Reminders</string>
+    <string name="notification_channel_description">Reminders you schedule in Remindrop</string>
+    <string name="snooze_30">30 minutes</string>
+    <string name="snooze_1h">1 hour</string>
+    <string name="snooze_tonight">This evening</string>
+    <string name="snooze_tomorrow">Tomorrow</string>
+    <string name="permission_needed">Notifications are required to show reminders.</string>
+</resources>
