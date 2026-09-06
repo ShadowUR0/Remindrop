@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Şimdi paylaş · sonra hatırla</string>
+    <string name="empty_share_hint">Herhangi bir uygulamada Paylaş'ı kullanıp Remindrop'u seçin.</string>
+    <string name="share_title">Bunu bana hatırlat</string>
+    <string name="choose_when">Ne zaman hatırlatalım?</string>
+    <string name="in_one_hour">1 saat sonra</string>
+    <string name="this_evening">Bu akşam</string>
+    <string name="tomorrow">Yarın</string>
+    <string name="this_weekend">Bu hafta sonu</string>
+    <string name="custom_time">Tarih ve saat seç</string>
+    <string name="cancel">İptal</string>
+    <string name="done">Tamamlandı</string>
+    <string name="later">Daha sonra</string>
+    <string name="now">Şimdi</string>
+    <string name="all_caught_up">Şu anda ilgilenmeniz gereken bir şey yok</string>
+    <string name="nothing_later">Yaklaşan hatırlatıcı yok</string>
+    <string name="nothing_done">Tamamlanan hatırlatıcılar burada görünür</string>
+    <string name="open">Aç</string>
+    <string name="mark_done">Tamamlandı olarak işaretle</string>
+    <string name="snooze">Daha sonra hatırlat</string>
+    <string name="delete">Sil</string>
+    <string name="new_reminder">Yeni hatırlatıcı</string>
+    <string name="title_optional">Başlık (isteğe bağlı)</string>
+    <string name="text_or_link">Metin veya bağlantı</string>
+    <string name="choose_time">Saat seç</string>
+    <string name="save">Kaydet</string>
+    <string name="settings">Ayarlar</string>
+    <string name="privacy">Önce gizlilik</string>
+    <string name="privacy_detail">Hesap yok, izleyici yok, bulut yok ve İnternet izni yok. Hatırlatıcılarınız yalnızca bu cihazda kalır.</string>
+    <string name="reliability">Hatırlatıcı güvenilirliği</string>
+    <string name="reliability_detail">Remindrop Android alarmlarını kullanır ve cihaz yeniden başlatıldığında bekleyen hatırlatıcıları yeniden zamanlar. Uygulamaya sıkı pil kısıtlamaları uygulanırsa bazı telefonlar hatırlatıcıları geciktirebilir.</string>
+    <string name="battery_settings">Uygulama pil ayarlarını aç</string>
+    <string name="about">Hakkında</string>
+    <string name="version">Sürüm 0.1.0</string>
+    <string name="notification_channel">Hatırlatıcılar</string>
+    <string name="notification_channel_description">Remindrop'ta planladığınız hatırlatıcılar</string>
+    <string name="snooze_30">30 dakika</string>
+    <string name="snooze_1h">1 saat</string>
+    <string name="snooze_tonight">Bu akşam</string>
+    <string name="snooze_tomorrow">Yarın</string>
+    <string name="permission_needed">Remindrop'un hatırlatıcılarınızı gösterebilmesi için bildirimlere izin verin.</string>
+</resources>
