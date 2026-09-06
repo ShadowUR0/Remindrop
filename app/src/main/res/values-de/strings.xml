@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">Jetzt teilen · später erinnern</string>
+    <string name="empty_share_hint">Nutze Teilen in einer beliebigen App und wähle Remindrop.</string>
+    <string name="share_title">Daran erinnern</string>
+    <string name="choose_when">Wann möchtest du daran erinnert werden?</string>
+    <string name="in_one_hour">In 1 Stunde</string>
+    <string name="this_evening">Heute Abend</string>
+    <string name="tomorrow">Morgen</string>
+    <string name="this_weekend">Dieses Wochenende</string>
+    <string name="custom_time">Datum und Uhrzeit wählen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="done">Erledigt</string>
+    <string name="later">Später</string>
+    <string name="now">Jetzt</string>
+    <string name="all_caught_up">Nichts braucht deine Aufmerksamkeit</string>
+    <string name="nothing_later">Keine anstehenden Erinnerungen</string>
+    <string name="nothing_done">Erledigte Erinnerungen erscheinen hier</string>
+    <string name="open">Öffnen</string>
+    <string name="mark_done">Als erledigt markieren</string>
+    <string name="snooze">Später erinnern</string>
+    <string name="delete">Löschen</string>
+    <string name="new_reminder">Neue Erinnerung</string>
+    <string name="title_optional">Titel (optional)</string>
+    <string name="text_or_link">Text oder Link</string>
+    <string name="choose_time">Uhrzeit wählen</string>
+    <string name="save">Speichern</string>
+    <string name="settings">Einstellungen</string>
+    <string name="privacy">Datenschutz zuerst</string>
+    <string name="privacy_detail">Kein Konto, keine Tracker, keine Cloud und keine Internet-Berechtigung. Deine Erinnerungen bleiben auf diesem Gerät.</string>
+    <string name="reliability">Zuverlässigkeit der Erinnerungen</string>
+    <string name="reliability_detail">Remindrop nutzt Android-Alarme und plant ausstehende Erinnerungen nach einem Neustart erneut. Manche Geräte können Erinnerungen verzögern, wenn die App stark durch Akku-Einstellungen eingeschränkt ist.</string>
+    <string name="battery_settings">Akku-Einstellungen der App öffnen</string>
+    <string name="about">Über die App</string>
+    <string name="version">Version 0.1.0</string>
+    <string name="notification_channel">Erinnerungen</string>
+    <string name="notification_channel_description">Erinnerungen, die du in Remindrop planst</string>
+    <string name="snooze_30">30 Minuten</string>
+    <string name="snooze_1h">1 Stunde</string>
+    <string name="snooze_tonight">Heute Abend</string>
+    <string name="snooze_tomorrow">Morgen</string>
+    <string name="permission_needed">Erlaube Benachrichtigungen, damit Remindrop deine Erinnerungen anzeigen kann.</string>
+</resources>
