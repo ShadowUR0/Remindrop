@@ -204,7 +204,7 @@ private fun ReminderHome(
                     Column {
                         Text(stringResource(R.string.app_name), fontWeight = FontWeight.SemiBold)
                         Text(
-                            text = "Share now · remember later",
+                            text = stringResource(R.string.tagline),
                             style = MaterialTheme.typography.labelMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
@@ -302,7 +302,7 @@ private fun EmptyState(tab: HomeTab, modifier: Modifier = Modifier) {
             if (tab != HomeTab.DONE) {
                 Spacer(Modifier.height(8.dp))
                 Text(
-                    text = "Use Share in any app and choose Remindrop.",
+                    text = stringResource(R.string.empty_share_hint),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
