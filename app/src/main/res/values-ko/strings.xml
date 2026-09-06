@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">지금 공유 · 나중에 다시 보기</string>
+    <string name="empty_share_hint">어떤 앱에서든 공유를 누른 뒤 Remindrop을 선택하세요.</string>
+    <string name="share_title">이걸 나중에 알려줘</string>
+    <string name="choose_when">언제 알려드릴까요?</string>
+    <string name="in_one_hour">1시간 후</string>
+    <string name="this_evening">오늘 저녁</string>
+    <string name="tomorrow">내일</string>
+    <string name="this_weekend">이번 주말</string>
+    <string name="custom_time">날짜와 시간 선택</string>
+    <string name="cancel">취소</string>
+    <string name="done">완료</string>
+    <string name="later">나중에</string>
+    <string name="now">지금</string>
+    <string name="all_caught_up">지금 확인할 항목이 없습니다</string>
+    <string name="nothing_later">예정된 알림이 없습니다</string>
+    <string name="nothing_done">완료한 알림이 여기에 표시됩니다</string>
+    <string name="open">열기</string>
+    <string name="mark_done">완료로 표시</string>
+    <string name="snooze">나중에 알림</string>
+    <string name="delete">삭제</string>
+    <string name="new_reminder">새 알림</string>
+    <string name="title_optional">제목 (선택)</string>
+    <string name="text_or_link">텍스트 또는 링크</string>
+    <string name="choose_time">시간 선택</string>
+    <string name="save">저장</string>
+    <string name="settings">설정</string>
+    <string name="privacy">개인정보 보호 우선</string>
+    <string name="privacy_detail">계정, 추적기, 클라우드, 인터넷 권한이 필요하지 않습니다. 알림은 이 기기에만 저장됩니다.</string>
+    <string name="reliability">알림 신뢰성</string>
+    <string name="reliability_detail">Remindrop은 Android 알람을 사용하고 기기를 재부팅한 뒤에도 대기 중인 알림을 다시 예약합니다. 앱에 강한 배터리 제한이 적용된 일부 기기에서는 알림이 늦어질 수 있습니다.</string>
+    <string name="battery_settings">앱 배터리 설정 열기</string>
+    <string name="about">앱 정보</string>
+    <string name="version">버전 0.1.0</string>
+    <string name="notification_channel">알림</string>
+    <string name="notification_channel_description">Remindrop에서 예약한 알림</string>
+    <string name="snooze_30">30분</string>
+    <string name="snooze_1h">1시간</string>
+    <string name="snooze_tonight">오늘 저녁</string>
+    <string name="snooze_tomorrow">내일</string>
+    <string name="permission_needed">알림을 표시하려면 Remindrop의 알림 권한을 허용하세요.</string>
+</resources>
