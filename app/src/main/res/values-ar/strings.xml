@@ -33,7 +33,7 @@
     <string name="reliability_detail">يستخدم Remindrop منبهات Android ويعيد جدولة التذكيرات المعلقة بعد اعادة تشغيل الهاتف. قد تؤخر بعض الهواتف التذكيرات اذا كان التطبيق مقيدا بشدة لتوفير البطارية.</string>
     <string name="battery_settings">فتح اعدادات بطارية التطبيق</string>
     <string name="about">حول التطبيق</string>
-    <string name="version">الاصدار 0.1.0</string>
+    <string name="version">الاصدار 0.1.2</string>
     <string name="notification_channel">التذكيرات</string>
     <string name="notification_channel_description">التذكيرات التي تضبطها في Remindrop</string>
     <string name="snooze_30">30 دقيقة</string>
