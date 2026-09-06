@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Remindrop</title>
+  <rect width="128" height="128" rx="28" fill="#6750A4"/>
+  <path fill="#FFFFFF" d="M64 30c-13.3 0-24 10.7-24 24v13.8l-6.5 11.3A4.5 4.5 0 0 0 37.4 86h53.2a4.5 4.5 0 0 0 3.9-6.9L88 67.8V54c0-13.3-10.7-24-24-24Zm-9 65a9 9 0 0 0 18 0H55Z"/>
+</svg>
