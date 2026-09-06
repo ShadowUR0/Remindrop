@@ -84,9 +84,15 @@ app/build/outputs/apk/debug/app-debug.apk
 
 ## Build on GitHub
 
-GitHub Actions builds the project on every push and pull request. Open the **Actions** tab, choose the latest successful **Android build**, then download the `remindrop-debug` artifact.
+GitHub Actions builds and verifies the project on every push and pull request. CI builds the debug APK, validates the minified release variant, and runs Android Lint. Open the **Actions** tab, choose the latest successful **Android build**, then download the `remindrop-debug` artifact.
 
 The CI build uses only GitHub-hosted runners and official GitHub/Gradle setup actions. No Remindrop server is involved.
+
+## Production releases
+
+A separate GitHub Actions workflow creates a signed GitHub Release whenever a `v*` tag is pushed. A persistent private signing key is required once so future APK updates keep the same Android signature. The key is supplied only through GitHub Actions secrets and is never committed to the repository.
+
+See [docs/RELEASING.md](docs/RELEASING.md) for the one-time signing setup and release process.
 
 ## Privacy
 
