@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remindrop</string>
+    <string name="tagline">अभी साझा करें · बाद में याद करें</string>
+    <string name="empty_share_hint">किसी भी ऐप में शेयर करें और Remindrop चुनें।</string>
+    <string name="share_title">मुझे इसकी याद दिलाएं</string>
+    <string name="choose_when">कब याद दिलाएं?</string>
+    <string name="in_one_hour">1 घंटे बाद</string>
+    <string name="this_evening">आज शाम</string>
+    <string name="tomorrow">कल</string>
+    <string name="this_weekend">इस सप्ताहांत</string>
+    <string name="custom_time">तारीख और समय चुनें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="done">पूरा</string>
+    <string name="later">बाद में</string>
+    <string name="now">अभी</string>
+    <string name="all_caught_up">अभी कुछ भी ध्यान देने लायक नहीं है</string>
+    <string name="nothing_later">कोई आने वाला रिमाइंडर नहीं है</string>
+    <string name="nothing_done">पूरे किए गए रिमाइंडर यहां दिखाई देंगे</string>
+    <string name="open">खोलें</string>
+    <string name="mark_done">पूरा हुआ चिह्नित करें</string>
+    <string name="snooze">बाद में याद दिलाएं</string>
+    <string name="delete">हटाएं</string>
+    <string name="new_reminder">नया रिमाइंडर</string>
+    <string name="title_optional">शीर्षक (वैकल्पिक)</string>
+    <string name="text_or_link">टेक्स्ट या लिंक</string>
+    <string name="choose_time">समय चुनें</string>
+    <string name="save">सहेजें</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="privacy">गोपनीयता पहले</string>
+    <string name="privacy_detail">कोई अकाउंट नहीं, कोई ट्रैकर नहीं, कोई क्लाउड नहीं और इंटरनेट अनुमति भी नहीं। आपके रिमाइंडर इसी डिवाइस पर रहते हैं।</string>
+    <string name="reliability">रिमाइंडर की विश्वसनीयता</string>
+    <string name="reliability_detail">Remindrop Android अलार्म का उपयोग करता है और फोन रीस्टार्ट होने के बाद लंबित रिमाइंडर दोबारा शेड्यूल करता है। अगर ऐप पर कड़ी बैटरी पाबंदियां हों तो कुछ फोन रिमाइंडर देर से दिखा सकते हैं।</string>
+    <string name="battery_settings">ऐप की बैटरी सेटिंग्स खोलें</string>
+    <string name="about">ऐप के बारे में</string>
+    <string name="version">संस्करण 0.1.0</string>
+    <string name="notification_channel">रिमाइंडर</string>
+    <string name="notification_channel_description">Remindrop में शेड्यूल किए गए रिमाइंडर</string>
+    <string name="snooze_30">30 मिनट</string>
+    <string name="snooze_1h">1 घंटा</string>
+    <string name="snooze_tonight">आज शाम</string>
+    <string name="snooze_tomorrow">कल</string>
+    <string name="permission_needed">रिमाइंडर दिखाने के लिए Remindrop को नोटिफिकेशन की अनुमति दें।</string>
+</resources>
