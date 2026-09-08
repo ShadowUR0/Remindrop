@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Esta tarde</string>
     <string name="snooze_tomorrow">Mañana</string>
     <string name="permission_needed">Permite las notificaciones para que Remindrop pueda mostrar tus recordatorios.</string>
+    <string name="filter_all">Todos</string>
+    <string name="tag_text">Texto</string>
 </resources>

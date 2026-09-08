@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Bu akşam</string>
     <string name="snooze_tomorrow">Yarın</string>
     <string name="permission_needed">Remindrop’un hatırlatıcılarınızı gösterebilmesi için bildirimlere izin verin.</string>
+    <string name="filter_all">Tümü</string>
+    <string name="tag_text">Metin</string>
 </resources>

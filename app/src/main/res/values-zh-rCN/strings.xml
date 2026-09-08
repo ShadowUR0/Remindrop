@@ -41,4 +41,6 @@
     <string name="snooze_tonight">今晚</string>
     <string name="snooze_tomorrow">明天</string>
     <string name="permission_needed">为了显示提醒，请允许 Remindrop 发送通知。</string>
+    <string name="filter_all">全部</string>
+    <string name="tag_text">文本</string>
 </resources>

@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Tối nay</string>
     <string name="snooze_tomorrow">Ngày mai</string>
     <string name="permission_needed">Hãy cho phép thông báo để Remindrop có thể hiển thị lời nhắc của bạn.</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="tag_text">Văn bản</string>
 </resources>

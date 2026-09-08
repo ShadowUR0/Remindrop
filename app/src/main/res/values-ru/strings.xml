@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Сегодня вечером</string>
     <string name="snooze_tomorrow">Завтра</string>
     <string name="permission_needed">Разрешите уведомления, чтобы Remindrop мог показывать напоминания.</string>
+    <string name="filter_all">Все</string>
+    <string name="tag_text">Текст</string>
 </resources>

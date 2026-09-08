@@ -41,4 +41,6 @@
     <string name="snooze_tonight">今夜</string>
     <string name="snooze_tomorrow">明日</string>
     <string name="permission_needed">リマインダーを表示するには、Remindrop の通知を許可してください。</string>
+    <string name="filter_all">すべて</string>
+    <string name="tag_text">テキスト</string>
 </resources>

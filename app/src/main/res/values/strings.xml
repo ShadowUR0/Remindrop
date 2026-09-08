@@ -41,4 +41,6 @@
     <string name="snooze_tonight">This evening</string>
     <string name="snooze_tomorrow">Tomorrow</string>
     <string name="permission_needed">Notifications are required to show reminders.</string>
+    <string name="filter_all">All</string>
+    <string name="tag_text">Text</string>
 </resources>

@@ -1,12 +1,12 @@
 package com.shadowuro.remindrop.ui
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
@@ -25,6 +25,13 @@ fun SnoozeSheet(
     onSnooze: (Long) -> Unit,
 ) {
     val context = LocalContext.current
+    val options = listOf(
+        stringResource(R.string.snooze_30) to TimePresets.inThirtyMinutes(),
+        stringResource(R.string.snooze_1h) to TimePresets.inOneHour(),
+        stringResource(R.string.snooze_tonight) to TimePresets.thisEvening(),
+        stringResource(R.string.snooze_tomorrow) to TimePresets.tomorrow(),
+    )
+
     ModalBottomSheet(
         onDismissRequest = onDismiss,
         shape = RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
@@ -38,25 +45,14 @@ fun SnoozeSheet(
             Text(
                 text = stringResource(R.string.snooze),
                 style = MaterialTheme.typography.headlineSmall,
-                modifier = Modifier.padding(bottom = 8.dp),
             )
-            SnoozeRow(stringResource(R.string.snooze_30)) { onSnooze(TimePresets.inThirtyMinutes()) }
-            SnoozeRow(stringResource(R.string.snooze_1h)) { onSnooze(TimePresets.inOneHour()) }
-            SnoozeRow(stringResource(R.string.snooze_tonight)) { onSnooze(TimePresets.thisEvening()) }
-            SnoozeRow(stringResource(R.string.snooze_tomorrow)) { onSnooze(TimePresets.tomorrow()) }
-            SnoozeRow(stringResource(R.string.custom_time)) {
-                showDateTimePicker(context, onSnooze)
-            }
+            Spacer(Modifier.height(16.dp))
+            TimeOptionGroup(
+                options = options,
+                showTimes = true,
+                onPick = onSnooze,
+                onCustom = { showDateTimePicker(context, onSnooze) },
+            )
         }
     }
-}
-
-@Composable
-private fun SnoozeRow(label: String, onClick: () -> Unit) {
-    ListItem(
-        headlineContent = { Text(label) },
-        modifier = Modifier
-            .fillMaxWidth()
-            .clickable(onClick = onClick),
-    )
 }

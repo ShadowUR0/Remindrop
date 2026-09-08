@@ -41,4 +41,6 @@
     <string name="snooze_tonight">오늘 저녁</string>
     <string name="snooze_tomorrow">내일</string>
     <string name="permission_needed">알림을 표시하려면 Remindrop의 알림 권한을 허용하세요.</string>
+    <string name="filter_all">전체</string>
+    <string name="tag_text">텍스트</string>
 </resources>

@@ -41,4 +41,6 @@
     <string name="snooze_tonight">आज शाम</string>
     <string name="snooze_tomorrow">कल</string>
     <string name="permission_needed">रिमाइंडर दिखाने के लिए Remindrop को नोटिफिकेशन की अनुमति दें।</string>
+    <string name="filter_all">सभी</string>
+    <string name="tag_text">टेक्स्ट</string>
 </resources>

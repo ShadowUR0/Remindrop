@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Questa sera</string>
     <string name="snooze_tomorrow">Domani</string>
     <string name="permission_needed">Consenti le notifiche affinché Remindrop possa mostrare i tuoi promemoria.</string>
+    <string name="filter_all">Tutti</string>
+    <string name="tag_text">Testo</string>
 </resources>

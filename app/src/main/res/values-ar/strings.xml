@@ -41,4 +41,6 @@
     <string name="snooze_tonight">هذا المساء</string>
     <string name="snooze_tomorrow">غدا</string>
     <string name="permission_needed">اسمح بالاشعارات حتى يتمكن Remindrop من عرض التذكيرات.</string>
+    <string name="filter_all">الكل</string>
+    <string name="tag_text">نص</string>
 </resources>

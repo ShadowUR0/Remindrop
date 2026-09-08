@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Malam ini</string>
     <string name="snooze_tomorrow">Besok</string>
     <string name="permission_needed">Izinkan notifikasi agar Remindrop dapat menampilkan pengingat Anda.</string>
+    <string name="filter_all">Semua</string>
+    <string name="tag_text">Teks</string>
 </resources>

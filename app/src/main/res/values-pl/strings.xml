@@ -41,4 +41,6 @@
     <string name="snooze_tonight">Dziś wieczorem</string>
     <string name="snooze_tomorrow">Jutro</string>
     <string name="permission_needed">Zezwól na powiadomienia, aby Remindrop mógł wyświetlać Twoje przypomnienia.</string>
+    <string name="filter_all">Wszystkie</string>
+    <string name="tag_text">Tekst</string>
 </resources>
