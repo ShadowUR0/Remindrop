@@ -11,9 +11,9 @@ See a Reddit post, video, article, product, message, or piece of text you want t
 ## Screenshots
 
 <p align="center">
+  <img src="docs/screenshots/reminders.webp" width="23%" alt="Remindrop reminder list">
   <img src="docs/screenshots/share-sheet.webp" width="23%" alt="Share to Remindrop">
   <img src="docs/screenshots/reminder-picker.webp" width="23%" alt="Choose reminder time">
-  <img src="docs/screenshots/reminders.webp" width="23%" alt="Remindrop reminder list">
   <img src="docs/screenshots/notification.webp" width="23%" alt="Reminder notification">
 </p>
 
