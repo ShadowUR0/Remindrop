@@ -8,6 +8,15 @@ Remindrop is a lightweight, privacy-first Android app for turning anything you c
 
 See a Reddit post, video, article, product, message, or piece of text you want to revisit? Use Android's Share menu, choose **Remindrop**, pick a time, and return to what you were doing. Remindrop will bring it back later with a local notification.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/share-sheet.webp" width="23%" alt="Share to Remindrop">
+  <img src="docs/screenshots/reminder-picker.webp" width="23%" alt="Choose reminder time">
+  <img src="docs/screenshots/reminders.webp" width="23%" alt="Remindrop reminder list">
+  <img src="docs/screenshots/notification.webp" width="23%" alt="Reminder notification">
+</p>
+
 ## Why Remindrop
 
 - **Fast share flow:** Share → Remindrop → choose a time → done
