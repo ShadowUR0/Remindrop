@@ -6,6 +6,8 @@ import java.util.Locale
 data class SourceTag(val id: String, val label: String) {
     companion object {
         const val TEXT_ID = "text"
+        const val HOST_PREFIX = "h:"
+        const val APP_PREFIX = "a:"
     }
 }
 
@@ -188,18 +190,33 @@ object SourceTags {
         ),
     )
 
-    private val byHost = known.flatMap { source -> source.hosts.map { it to source.tag } }.toMap()
-    private val byPackage = known.flatMap { source -> source.packages.map { it to source.tag } }.toMap()
+    private val byId = known.associate { it.tag.id to it.tag }
+    private val byHost = known.flatMap { source -> source.hosts.map { it to source.tag.id } }.toMap()
+    private val byPackage = known.flatMap { source -> source.packages.map { it to source.tag.id } }.toMap()
 
     private val hostPrefixes = listOf("www.", "m.", "mobile.", "amp.")
-    private val sharedDomains = setOf("co", "com", "org", "net", "ac", "gov", "edu")
     private val genericSegments = setOf("com", "org", "net", "io", "app", "apps", "android", "mobile")
 
-    fun of(reminder: Reminder): SourceTag = of(reminder.url, reminder.source)
+    fun resolveId(url: String?, sourcePackage: String?): String =
+        fromUrlId(url) ?: fromPackageId(sourcePackage) ?: SourceTag.TEXT_ID
 
-    fun of(url: String?, source: String?): SourceTag = fromUrl(url) ?: fromPackage(source) ?: TEXT
+    fun tag(id: String): SourceTag {
+        byId[id]?.let { return it }
+        return when {
+            id == SourceTag.TEXT_ID -> TEXT
+            id.startsWith(SourceTag.HOST_PREFIX) -> {
+                val host = id.removePrefix(SourceTag.HOST_PREFIX)
+                SourceTag(id, prettify(host.substringBefore('.')))
+            }
+            id.startsWith(SourceTag.APP_PREFIX) -> {
+                val packageName = id.removePrefix(SourceTag.APP_PREFIX)
+                SourceTag(id, packageLabel(packageName))
+            }
+            else -> SourceTag(id, prettify(id.substringBefore('.')))
+        }
+    }
 
-    private fun fromUrl(url: String?): SourceTag? {
+    private fun fromUrlId(url: String?): String? {
         val host = url
             ?.let { runCatching { Uri.parse(it).host }.getOrNull() }
             ?.lowercase(Locale.ROOT)
@@ -207,33 +224,41 @@ object SourceTags {
             ?.takeIf { it.isNotBlank() }
             ?: return null
 
-        val normalized = hostPrefixes.fold(host) { value, prefix -> value.removePrefix(prefix) }
-        byHost[normalized]?.let { return it }
-        byHost.entries.firstOrNull { normalized.endsWith(".${it.key}") }?.let { return it.value }
-
-        val domain = registrableDomain(normalized)
-        return SourceTag(domain, prettify(domain.substringBefore('.')))
+        val normalized = normalizeHost(host)
+        var candidate = normalized
+        while (candidate.isNotEmpty()) {
+            byHost[candidate]?.let { return it }
+            val dot = candidate.indexOf('.')
+            if (dot < 0) break
+            candidate = candidate.substring(dot + 1)
+        }
+        return SourceTag.HOST_PREFIX + normalized
     }
 
-    private fun fromPackage(source: String?): SourceTag? {
-        val packageName = source
+    private fun fromPackageId(sourcePackage: String?): String? {
+        val packageName = sourcePackage
             ?.trim()
             ?.lowercase(Locale.ROOT)
             ?.takeIf { it.isNotBlank() }
             ?: return null
 
         byPackage[packageName]?.let { return it }
-        val segment = packageName.split('.')
-            .firstOrNull { it.isNotBlank() && it !in genericSegments }
-            ?: return null
-        return SourceTag(packageName, prettify(segment))
+        return SourceTag.APP_PREFIX + packageName
     }
 
-    private fun registrableDomain(host: String): String {
-        val labels = host.split('.').filter { it.isNotBlank() }
-        if (labels.size <= 2) return labels.joinToString(".")
-        val keep = if (labels[labels.size - 2] in sharedDomains) 3 else 2
-        return labels.takeLast(keep).joinToString(".")
+    private fun normalizeHost(host: String): String {
+        var value = host
+        while (true) {
+            val prefix = hostPrefixes.firstOrNull { value.startsWith(it) } ?: return value
+            value = value.removePrefix(prefix)
+        }
+    }
+
+    private fun packageLabel(packageName: String): String {
+        val segment = packageName.split('.')
+            .firstOrNull { it.isNotBlank() && it !in genericSegments }
+            ?: packageName
+        return prettify(segment)
     }
 
     private fun prettify(name: String): String = when {
@@ -241,4 +266,5 @@ object SourceTags {
         name.length <= 3 -> name.uppercase(Locale.ROOT)
         else -> name.replaceFirstChar { it.uppercase() }
     }
+
 }

@@ -17,6 +17,7 @@ import androidx.compose.runtime.setValue
 import androidx.core.content.ContextCompat
 import com.shadowuro.remindrop.R
 import com.shadowuro.remindrop.data.ReminderStore
+import com.shadowuro.remindrop.data.SourceTags
 import com.shadowuro.remindrop.reminder.ReminderNotifier
 import com.shadowuro.remindrop.reminder.ReminderScheduler
 import com.shadowuro.remindrop.reminder.TimePresets
@@ -101,7 +102,7 @@ class ShareActivity : ComponentActivity() {
             title = title,
             content = content,
             url = url,
-            source = source,
+            sourceId = SourceTags.resolveId(url, source),
             scheduledAt = scheduledAt,
         )
         ReminderScheduler.schedule(this, reminder)

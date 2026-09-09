@@ -25,7 +25,7 @@ object ReminderStore {
         title: String,
         content: String,
         url: String?,
-        source: String?,
+        sourceId: String,
         scheduledAt: Long,
     ): Reminder = synchronized(lock) {
         val items = readUnsafe(context).toMutableList()
@@ -38,7 +38,7 @@ object ReminderStore {
             title = title.trim().take(160),
             content = content.trim().take(MAX_CONTENT_LENGTH),
             url = url?.trim()?.take(2_048),
-            source = source?.trim()?.take(120),
+            sourceId = sourceId.trim().take(255).ifBlank { SourceTag.TEXT_ID },
             scheduledAt = scheduledAt,
             createdAt = now,
         )
@@ -84,19 +84,29 @@ object ReminderStore {
     private fun readUnsafe(context: Context): List<Reminder> {
         val file = File(context.filesDir, FILE_NAME)
         if (!file.exists()) return emptyList()
-        return runCatching {
+
+        val parsed = runCatching {
+            var needsMigration = false
             val text = AtomicFile(file).openRead().bufferedReader().use { it.readText() }
             val array = JSONArray(text)
-            buildList(array.length()) {
+            val reminders = buildList(array.length()) {
                 for (index in 0 until array.length()) {
                     val json = array.getJSONObject(index)
+                    val url = json.optNullableString("url")
+                    val storedTag = json.optNullableString("tag")
+                    val sourceId = if (storedTag != null) {
+                        storedTag
+                    } else {
+                        needsMigration = true
+                        SourceTags.resolveId(url, json.optNullableString("source"))
+                    }
                     add(
                         Reminder(
                             id = json.getLong("id"),
                             title = json.optString("title"),
                             content = json.optString("content"),
-                            url = json.optNullableString("url"),
-                            source = json.optNullableString("source"),
+                            url = url,
+                            sourceId = sourceId,
                             scheduledAt = json.getLong("scheduledAt"),
                             createdAt = json.getLong("createdAt"),
                             state = runCatching {
@@ -107,7 +117,13 @@ object ReminderStore {
                     )
                 }
             }
-        }.getOrElse { emptyList() }
+            reminders to needsMigration
+        }.getOrElse { return emptyList() }
+
+        if (parsed.second) {
+            runCatching { writeUnsafe(context, parsed.first) }
+        }
+        return parsed.first
     }
 
     private fun writeUnsafe(context: Context, reminders: List<Reminder>) {
@@ -119,7 +135,7 @@ object ReminderStore {
                     put("title", reminder.title)
                     put("content", reminder.content)
                     put("url", reminder.url ?: JSONObject.NULL)
-                    put("source", reminder.source ?: JSONObject.NULL)
+                    put("tag", reminder.sourceId)
                     put("scheduledAt", reminder.scheduledAt)
                     put("createdAt", reminder.createdAt)
                     put("state", reminder.state.name)

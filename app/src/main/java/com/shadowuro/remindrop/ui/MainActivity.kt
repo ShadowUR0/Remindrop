@@ -22,7 +22,6 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.shrinkVertically
 import androidx.compose.animation.slideInHorizontally
-import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -71,7 +70,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.ripple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -129,10 +127,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     transitionSpec = {
                         val direction = if (targetState) 1 else -1
-                        val enter = slideInHorizontally(tween(260)) { width -> direction * width / 6 } +
-                            fadeIn(tween(200))
-                        val exit = slideOutHorizontally(tween(260)) { width -> -direction * width / 6 } +
-                            fadeOut(tween(160))
+                        val enter = slideInHorizontally(tween(190)) { width -> direction * width / 16 } +
+                            fadeIn(tween(150))
+                        val exit = fadeOut(tween(110))
                         enter togetherWith exit
                     },
                     label = "screen",
@@ -238,9 +235,17 @@ private fun ReminderHome(
     var tab by rememberSaveable { mutableStateOf(HomeTab.NOW) }
     var sourceId by rememberSaveable { mutableStateOf<String?>(null) }
     val now = System.currentTimeMillis()
-    val tags = remember(reminders) { reminders.associate { it.id to SourceTags.of(it) } }
-    val sources = remember(tags) { sourcesOf(tags) }
-    val counts = HomeTab.entries.associateWith { remindersFor(reminders, tags, it, sourceId, now).size }
+    val sources = remember(reminders) { sourcesOf(reminders) }
+    val bucketsCache = mutableMapOf<String?, ReminderBuckets>()
+    fun bucketsFor(id: String?): ReminderBuckets = bucketsCache.getOrPut(id) {
+        reminderBuckets(reminders, id, now)
+    }
+    val currentBuckets = bucketsFor(sourceId)
+    val counts = mapOf(
+        HomeTab.NOW to currentBuckets.now.size,
+        HomeTab.LATER to currentBuckets.later.size,
+        HomeTab.DONE to currentBuckets.done.size,
+    )
 
     LaunchedEffect(sources) {
         if (sourceId != null && sources.none { it.id == sourceId }) sourceId = null
@@ -315,7 +320,7 @@ private fun ReminderHome(
                 },
                 label = "reminders",
             ) { selection ->
-                val items = remindersFor(reminders, tags, selection.tab, selection.sourceId, now)
+                val items = bucketsFor(selection.sourceId).forTab(selection.tab)
                 if (items.isEmpty()) {
                     EmptyState(tab = selection.tab, modifier = Modifier.fillMaxSize())
                 } else {
@@ -327,7 +332,7 @@ private fun ReminderHome(
                         itemsIndexed(items, key = { _, reminder -> reminder.id }) { index, reminder ->
                             ReminderCard(
                                 reminder = reminder,
-                                tag = tags[reminder.id] ?: SourceTags.of(reminder),
+                                tag = SourceTags.tag(reminder.sourceId),
                                 position = cardPosition(index, items.size),
                                 modifier = Modifier.animateItem(),
                                 onOpen = onOpen,
@@ -343,40 +348,51 @@ private fun ReminderHome(
     }
 }
 
-private fun sourcesOf(tags: Map<Long, SourceTag>): List<SourceTag> = tags.values
-    .groupingBy { it }
+private fun sourcesOf(reminders: List<Reminder>): List<SourceTag> = reminders
+    .groupingBy { it.sourceId }
     .eachCount()
-    .entries
+    .map { (id, count) -> SourceTags.tag(id) to count }
     .sortedWith(
-        compareBy<Map.Entry<SourceTag, Int>> { it.key.id == SourceTag.TEXT_ID }
-            .thenByDescending { it.value }
-            .thenBy { it.key.label }
+        compareBy<Pair<SourceTag, Int>> { it.first.id == SourceTag.TEXT_ID }
+            .thenByDescending { it.second }
+            .thenBy { it.first.label }
     )
-    .map { it.key }
+    .map { it.first }
 
-private fun remindersFor(
+private data class ReminderBuckets(
+    val now: List<Reminder>,
+    val later: List<Reminder>,
+    val done: List<Reminder>,
+) {
+    fun forTab(tab: HomeTab): List<Reminder> = when (tab) {
+        HomeTab.NOW -> now
+        HomeTab.LATER -> later
+        HomeTab.DONE -> done
+    }
+}
+
+private fun reminderBuckets(
     reminders: List<Reminder>,
-    tags: Map<Long, SourceTag>,
-    tab: HomeTab,
     sourceId: String?,
     now: Long,
-): List<Reminder> {
-    val scoped = if (sourceId == null) {
-        reminders
-    } else {
-        reminders.filter { tags[it.id]?.id == sourceId }
+): ReminderBuckets {
+    val due = ArrayList<Reminder>()
+    val later = ArrayList<Reminder>()
+    val done = ArrayList<Reminder>()
+
+    reminders.forEach { reminder ->
+        if (sourceId != null && reminder.sourceId != sourceId) return@forEach
+        when {
+            reminder.state == ReminderState.DONE -> done += reminder
+            reminder.scheduledAt <= now -> due += reminder
+            else -> later += reminder
+        }
     }
-    return when (tab) {
-        HomeTab.NOW -> scoped
-            .filter { it.state == ReminderState.PENDING && it.scheduledAt <= now }
-            .sortedBy { it.scheduledAt }
-        HomeTab.LATER -> scoped
-            .filter { it.state == ReminderState.PENDING && it.scheduledAt > now }
-            .sortedBy { it.scheduledAt }
-        HomeTab.DONE -> scoped
-            .filter { it.state == ReminderState.DONE }
-            .sortedByDescending { it.completedAt ?: it.createdAt }
-    }
+
+    due.sortBy { it.scheduledAt }
+    later.sortBy { it.scheduledAt }
+    done.sortByDescending { it.completedAt ?: it.createdAt }
+    return ReminderBuckets(now = due, later = later, done = done)
 }
 
 @Composable
@@ -583,7 +599,7 @@ private fun ReminderCard(
                 if (canOpen) {
                     Modifier.clickable(
                         interactionSource = interactionSource,
-                        indication = ripple(),
+                        indication = null,
                         onClickLabel = openLabel,
                         onClick = { onOpen(reminder) },
                     )

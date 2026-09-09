@@ -1,0 +1,1 @@
+Polished reminder UI, source filters, quicker actions, and smoother interactions. Source tags are now resolved once when saving a reminder, keeping filtering lightweight on older devices.

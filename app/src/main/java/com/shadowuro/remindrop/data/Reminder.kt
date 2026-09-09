@@ -10,7 +10,7 @@ data class Reminder(
     val title: String,
     val content: String,
     val url: String?,
-    val source: String?,
+    val sourceId: String = SourceTag.TEXT_ID,
     val scheduledAt: Long,
     val createdAt: Long,
     val state: ReminderState = ReminderState.PENDING,
